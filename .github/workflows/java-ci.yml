@@ -25,5 +25,5 @@ jobs:
 
     - name: Build and Run Tests
       run: |
-        javac -cp .:libs/junit-platform-console-standalone-1.7.2-all.jar CalculadoraTests.java
+        javac -cp .:libs/junit-platform-console-standalone-1.7.2-all.jar src/br/calculadora/tests/CalculadoraTests.java
         java -jar libs/junit-platform-console-standalone-1.7.2-all.jar --class-path . --scan-class-path
