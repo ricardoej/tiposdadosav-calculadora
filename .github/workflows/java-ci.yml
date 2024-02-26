@@ -1,6 +1,9 @@
 name: Java CI
 
 on:
+  create:
+    branches:
+      - '*'
   push:
     branches:
       - '*'
