@@ -1,10 +1,10 @@
-name: Java CI
+name: Executar testes
 
 on:
-  create:
+  push:
     branches:
       - '*'
-  push:
+  create:
     branches:
       - '*'
 
