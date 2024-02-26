@@ -23,5 +23,7 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
 
-    - name: Build with Maven
-      run: mvn -B clean test
+    - name: Build and Run Tests
+      run: |
+        javac -cp .:libs/junit-platform-console-standalone-1.7.2-all.jar CalculadoraTests.java
+        java -jar libs/junit-platform-console-standalone-1.7.2-all.jar --class-path . --scan-class-path
